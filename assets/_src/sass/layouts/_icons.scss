@@ -1,0 +1,22 @@
+@use '../global' as *;
+
+.wrap-icon {
+	background-color: $gray-light;
+	border-radius: 50%;
+	box-sizing: border-box;
+	padding: 4px;
+
+	&--32 {
+		height: 32px;
+		width: 32px;
+	}
+
+	&--48 {
+		height: 48px;
+		width: 48px;
+	}
+
+	img {
+		width: 24px;
+	}
+}

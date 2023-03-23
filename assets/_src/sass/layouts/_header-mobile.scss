@@ -1,0 +1,86 @@
+@use '../global' as *;
+
+.mobile-menu {
+	background-color: $white-dark;
+	position: absolute;
+	top: 0;
+	transition: right 0.4s ease-in-out;
+	z-index: 2;
+
+	&--inactive {
+		right: 100%;
+	}
+
+	&--active {
+		right: 0;
+	}
+
+	&__links {
+		.subheading {
+			line-height: 2.75rem;
+		}
+	}
+}
+
+.header {
+	&__burgerbox {
+		background-color: $primary;
+		border-radius: 50%;
+		height: 48px;
+		padding: 8px;
+		width: 48px;
+	}
+
+	&__burger {
+		position: relative;
+	}
+}
+
+  
+.header__burger,
+.header__burger::before,
+.header__burger::after {
+	background-color: $white;
+	border-radius: 2px;
+	height: 2px;
+	padding: 0;
+	transition: margin 0.1s 0.2s, transform 0.2s;
+	width: 24px;
+}
+  
+.header__burger::before,
+.header__burger::after {
+	content: '';
+	left: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+  
+.header__burger::before {
+	margin-top: -6px;
+}
+  
+.header__burger::after {
+	margin-top: 6px;
+}
+
+.header__burgerbox--active .header__burger {
+	transform: rotate(45deg);
+}
+  
+.header__burgerbox--active .header__burger,
+.header__burgerbox--active .header__burger::before,
+.header__burgerbox--active .header__burger::after {
+	transition: margin 0.2s, transform 0.1s 0.2s;
+}
+  
+.header__burgerbox--active .header__burger::before,
+.header__burgerbox--active .header__burger::after {
+	margin-top: 0;
+}
+  
+.header__burgerbox--active .header__burger::after {
+	transform: rotate(-90deg);
+}

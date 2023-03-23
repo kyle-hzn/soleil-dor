@@ -1,0 +1,88 @@
+@use '../global' as *;
+
+.header {
+	background-color: $white;
+	border: 1px solid $white-dark;
+	border-radius: 0 0 24px 24px;
+	box-sizing: border-box;
+	left: 50%; 
+	padding: 16px 0;
+	position: fixed;
+	top: 0;
+	transform: translateX(-50%);
+	width: 100%;
+	z-index: 4;
+
+	&__ddlink1 {
+		.header__menu__link {
+			transition: all 0.2s ease-in-out;
+		}
+
+		.header__menu__link__icon {
+			transition: all 0.2s ease-in-out;
+		}
+
+		&--active {
+			.header__menu__link {
+				color: $primary;
+			}
+
+			.header__menu__link__icon {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+	
+	&__ddlink2 {
+		.header__menu__link {
+			transition: all 0.2s ease-in-out;
+		}
+
+		.header__menu__link__icon {
+			transition: all 0.2s ease-in-out;
+		}
+
+		&--active {
+			.header__menu__link {
+				color: $primary;
+			}
+
+			.header__menu__link__icon {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+}
+
+.header-dropdown {
+	background-color: $white;
+	border-radius: 0 0 24px 24px;
+	box-sizing: border-box;
+	padding: 24px;
+	position: absolute;
+	top: 80px;
+	transition: all 0.2s ease-in-out;
+	z-index: 3;
+
+	&--active {
+		opacity: 1.0;
+		transition: all 0.2s ease-in-out;
+		visibility: visible;
+	}
+
+	&--inactive {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&__link {
+		background-color: $white;
+		border-radius: 16px;
+		padding: 16px;
+		transition: background-color 0.3s ease-in-out;
+
+		&:hover {
+			background-color: $white-dark;
+		}
+	}
+}

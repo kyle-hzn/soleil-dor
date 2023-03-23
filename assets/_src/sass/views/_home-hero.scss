@@ -1,0 +1,56 @@
+@use '../global' as *;
+
+.hp-hero {
+	position: relative;
+
+	&::after {
+		background-color: $white-dark;
+		bottom: 0;
+		content: '';
+		height: 2px;
+		left: calc(-50vw + 50%);
+		position: absolute;
+		width: 100vw;
+	}
+
+	&__title {
+		width: 32rem;
+
+		@include breakpoint(small) {
+			width: auto;
+		}
+	}
+
+	&__card {
+		background-color: $white;
+		border-radius: 24px;
+		padding: 32px;
+
+		&__timestamp {
+			border: 2px solid $white-dark;
+			border-radius: 50%;
+			box-sizing: border-box;
+			height: 12px;
+			padding: 4px;
+			width: 12px;
+            
+			&--open {
+				background-color: $lime-green;
+			}
+
+			&--closed {
+				background-color: $red;
+			}
+		}
+	}
+
+	&__img {
+		background-color: $red;
+		border-radius: 150px 150px 0 0;
+		height: 100%;
+
+		@include breakpoint(small) {
+			border-radius: 150px;
+		}
+	}
+}

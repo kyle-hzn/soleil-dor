@@ -1,0 +1,156 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.heading--1 {
+	font-family: Recoleta;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: -0.05em;
+	line-height: 66px;
+	src: url('../fonts/Recoleta-Medium.woff');
+
+	@include breakpoint(small) {
+		font-size: 40px;
+		line-height: 42px;
+	}
+}
+
+.heading--2 {
+	font-family: Recoleta;
+	font-size: 72px;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: -0.05em;
+	line-height: 74px;
+	src: url('../fonts/Recoleta-Light.woff');
+}
+
+.heading--3 {
+	font-family: Recoleta;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: -0.05em;
+	line-height: 52px;
+	src: url('../fonts/Recoleta-Medium.woff');
+}
+
+.heading--4 {
+	font-family: Recoleta;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: -0.03em;
+	line-height: 36px;
+	src: url('../fonts/Recoleta-Light.woff');
+	text-transform: uppercase;
+}
+
+.subheading {
+	font-family: Recoleta;
+	font-size: 24px;
+	font-style: normal;
+	letter-spacing: -0.03em;
+	line-height: 26px;
+	text-transform: uppercase;
+
+	&--s {
+		font-weight: 300;
+		src: url('../fonts/Recoleta-Light.woff');
+	}
+
+	&--m {
+		font-weight: 400;
+		src: url('../fonts/Recoleta-Medium.woff');
+	}
+}
+
+.body--l {
+	font-family: Work Sans;
+	font-size: 18px;
+	font-style: normal;
+	letter-spacing: -0.03em;
+	line-height: 27px;
+
+	&--400 {
+		font-weight: 400;
+		src: url('../fonts/WorkSans-Regular.woff');
+	}
+	
+	&--500 {
+		font-weight: 500;
+		src: url('../fonts/WorkSans-Medium.woff');
+	}
+	
+}
+
+.body--m {
+	font-family: Work Sans;
+	font-size: 16px;
+	font-style: normal;
+	letter-spacing: -0.03em;
+	line-height: 21px;
+
+	&--400 {
+		font-weight: 400;
+		src: url('../fonts/WorkSans-Regular.woff');
+	}
+	
+	&--500 {
+		font-weight: 500;
+		src: url('../fonts/WorkSans-Medium.woff');
+	}
+	
+}
+
+.body--s {
+	font-family: Work Sans;
+	font-size: 14px;
+	font-style: normal;
+	letter-spacing: -0.03em;
+	line-height: 16px;
+
+	&--400 {
+		font-weight: 400;
+		src: url('../fonts/WorkSans-Regular.woff');
+	}
+	
+	&--500 {
+		font-weight: 500;
+		src: url('../fonts/WorkSans-Medium.woff');
+	}
+	
+}
+
+.label--m {
+	font-family: Work Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: -0.05em;
+	line-height: 16px;
+}
+
+.text {
+	&--white {
+		color: $white;
+	}
+
+	&--black {
+		color: $black;
+	}
+	
+	&--black-light {
+		color: $black-light;
+	}
+
+	&--link {
+		text-decoration: underline;
+		transition: color 0.2s ease-in-out;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+}
