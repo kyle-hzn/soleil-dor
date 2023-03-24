@@ -23,10 +23,10 @@
 						Bronzage
 					</a>
 					<div class="header__ddlink1 mr-6 flex">
-						<a href="#" class="inline-flex align-center body--s body--500 header__menu__link text--black text--link">
+						<div class="inline-flex align-center body--s body--500 header__menu__link text--black text--link">
 							Homme
 							<img class="header__menu__link__icon ml-1" src="<?php echo THEME_IMG_PATH; ?>/chevron-down.svg" alt="Flèche bas"/>
-						</a>
+						</div>
 						<!-- Dropdown menu 1 -->
 						<div class="header-dropdown header-dropdown--1 header-dropdown--inactive inline-flex flex-col">
 							<a href="#" class="header-dropdown__link inline-flex mb-1">
@@ -58,10 +58,10 @@
 						</div>
 					</div>
 					<div class="header__ddlink2 mr-6 flex">
-						<a href="#" class="inline-flex align-center body--s body--500 header__menu__link text--black text--link">
+						<div class="inline-flex align-center body--s body--500 header__menu__link text--black text--link">
 							Femme
 							<img class="header__menu__link__icon ml-1" src="<?php echo THEME_IMG_PATH; ?>/chevron-down.svg" alt="Flèche bas"/>
-						</a>
+						</div>
 						<!-- Dropdown menu 2 -->
 						<div class="header-dropdown header-dropdown--2 header-dropdown--inactive inline-flex flex-col">
 							<a href="#" class="header-dropdown__link inline-flex mb-1">

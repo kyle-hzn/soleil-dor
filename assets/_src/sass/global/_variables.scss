@@ -7,3 +7,6 @@ $white-dark: #F7F7F7;
 $white: #FEFEFE;
 $red: #B00E2F;
 $lime-green: #29CC6A;
+$layer-1: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), $black;
+$layer-2: linear-gradient(0deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.24)), $black;
+$layer-3: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), $black;

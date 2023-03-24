@@ -14,6 +14,8 @@
 	z-index: 4;
 
 	&__ddlink1 {
+		cursor: pointer;
+
 		.header__menu__link {
 			transition: all 0.2s ease-in-out;
 		}
@@ -34,6 +36,8 @@
 	}
 	
 	&__ddlink2 {
+		cursor: pointer;
+
 		.header__menu__link {
 			transition: all 0.2s ease-in-out;
 		}

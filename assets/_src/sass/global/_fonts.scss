@@ -53,11 +53,11 @@
 	font-style: normal;
 	letter-spacing: -0.03em;
 	line-height: 26px;
-	text-transform: uppercase;
 
 	&--s {
 		font-weight: 300;
 		src: url('../fonts/Recoleta-Light.woff');
+		text-transform: uppercase;
 	}
 
 	&--m {

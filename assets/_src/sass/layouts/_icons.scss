@@ -4,6 +4,7 @@
 	background-color: $gray-light;
 	border-radius: 50%;
 	box-sizing: border-box;
+	flex-shrink: 0;
 	padding: 4px;
 
 	&--32 {
