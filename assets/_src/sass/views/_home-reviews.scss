@@ -1,0 +1,29 @@
+@use '../global' as *;
+
+.hp-reviews {
+	&__google {
+		background-color: $white;
+		border-radius: 12px;
+		padding: 12px;
+	}
+
+	&__card {
+		background: $layer-1;
+		border-radius: 24px;
+		box-sizing: border-box;
+		padding: 32px;
+	}
+}
+
+.splide__arrow {
+	background-color: $black;
+	border: 1px solid $primary;
+	height: 48px;
+	position: unset;
+	transform: unset;
+	width: 48px;
+}
+
+.splide__pagination {
+	display: none;
+}

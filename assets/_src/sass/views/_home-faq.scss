@@ -1,0 +1,51 @@
+@use '../global' as *;
+
+.hp-faq {
+	&__list {
+		transition: all ease-in-out 0.3s;
+
+		&__item {
+			background-color: $white;
+			border-radius: 24px;
+			cursor: pointer;
+			padding: 24px;
+
+			&__panel {
+				height: auto;
+				max-height: 0;
+				opacity: 0;
+				transition: all 0.3s ease-in-out;
+				visibility: hidden;
+			}
+
+			.wrap-icon {
+				transition: transform 0.3s ease-in-out;
+			}
+
+			&--active {
+				gap: 0.25rem;
+                
+				.hp-faq__list__item__panel {
+					height: auto;
+					max-height: 500px;
+					opacity: 1;
+					visibility: visible;
+				}
+
+				.wrap-icon {
+					transform: rotate(135deg);
+				}
+			}
+		}
+	}
+}
+
+.list--item {
+	&--light {
+		border-bottom: 1px solid $white;
+	}
+
+	&--dark {
+		border-bottom: 1px solid $black;
+	}
+}

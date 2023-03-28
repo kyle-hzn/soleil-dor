@@ -7,7 +7,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body class="container mx-auto px-4 lg:px-0">
+<body class="container mx-auto px-4 lg:px-0 overflow-x-hidden">
 <?php wp_body_open(); ?>
 
 <header>

@@ -66,6 +66,17 @@ add_action( 'after_setup_theme', function() {
 	$GLOBALS['content_width'] = apply_filters( 'bathe_content_width', 960 );
 }, 0 );
 
+ /**
+  * Enqueue Splide.
+  */
+  add_action( 'wp_enqueue_scripts', 'custom_load_splide' );
+
+  function custom_load_splide() {
+	wp_register_script( 'splide-js', 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js', 0 );
+	wp_enqueue_script( 'splide-js' );
+	wp_enqueue_style( 'splide-css', 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css' );
+}
+
 
 /**
  * Enqueue scripts and styles.

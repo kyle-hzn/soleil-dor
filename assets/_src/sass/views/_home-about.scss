@@ -1,0 +1,36 @@
+@use '../global' as *;
+
+.hp-about {
+	&__thumbnails {
+		position: relative;
+	}
+
+	&__img {
+		overflow: hidden;
+
+		&--top-left {
+			border-radius: 50%;
+		}
+
+		&--center {
+			border-radius: 500px;
+		}
+
+		&--top-right {
+			border-radius: 500px;
+		}
+
+		&--bottom-right {
+			border-radius: 50%;
+
+		}
+	}
+
+	&__keystats {
+		&__card {
+			background: $layer-1;
+			border-radius: 12px;
+			padding: 32px;
+		}
+	}
+}

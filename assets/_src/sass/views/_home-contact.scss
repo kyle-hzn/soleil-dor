@@ -1,0 +1,23 @@
+@use '../global' as *;
+
+.hp-contact {
+	&__map {
+		&__box {
+			background-color: $white;
+			border-radius: 250px;
+			height: 0;
+			overflow: hidden;
+			overflow: hidden;
+			padding-bottom: 75%; // This is the aspect ratio
+			position: relative;
+
+			iframe {
+				height: 100% !important;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100% !important;
+			}
+		}
+	}
+}
