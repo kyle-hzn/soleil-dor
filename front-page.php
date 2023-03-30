@@ -29,28 +29,22 @@ if($hpHero): ?>
             <div class="hp-hero__card w-full lg:w-fit inline-flex flex-col">
                 <div class="inline-flex items-center mb-3">
                     <p class="body--m body-m-400 text--black">
-                        
-                        <?php
-                            if( has_shortcode( '[closed_now]', 'closed_now') ) {
-                                echo '
-                            <div class="wrap-icon wrap-icon--32 inline-flex items-center justify-center mr-2">
-                                <div class="hp-hero__card__timestamp hp-hero__card__timestamp--closed"></div>
-                            </div>
-                            <p class="body--m body-m-400 text--black">
-                                Actuellement fermé
-                            </p>
-                            ';
-                            }else{
-                                echo '
-                            <div class="wrap-icon wrap-icon--32 inline-flex items-center justify-center mr-2">
-                                <div class="hp-hero__card__timestamp hp-hero__card__timestamp--open"></div>
-                            </div>
-                            <p class="body--m body-m-400 text--black">
-                                Actuellement ouvert
-                            </p>
-                            ';
-                            }
-                        ?>
+                        <?php echo do_shortcode( '[mbhi_ifopen location="Soleil Dor"]
+                        <div class="wrap-icon wrap-icon--32 inline-flex items-center justify-center mr-2">
+                            <div class="hp-hero__card__timestamp hp-hero__card__timestamp--open"></div>
+                        </div>
+                        <p class="body--m body-m-400 text--black">
+                            Ouvert
+                        </p>
+                        [/mbhi_ifopen]' ); ?>
+                        <?php echo do_shortcode( '[mbhi_ifclosed location="Soleil Dor"]
+                        <div class="wrap-icon wrap-icon--32 inline-flex items-center justify-center mr-2">
+                            <div class="hp-hero__card__timestamp hp-hero__card__timestamp--closed"></div>
+                        </div>
+                        <p class="body--m body-m-400 text--black">
+                            Fermé
+                        </p>
+                        [/mbhi_ifclosed]' ); ?>
                     </p>
                 </div>
                 <div class="inline-flex items-center mb-3">
