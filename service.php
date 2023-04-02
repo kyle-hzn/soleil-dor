@@ -125,7 +125,7 @@ if($servicesPrices): ?>
         $servicesPricesItems = $servicesPrices['services-prices'];
         foreach($servicesPricesItems as $servicesPricesItem): ?>
     
-        <div class="services-prices-wrap flex flex-col gap-8 lg:w-10/12">
+        <div class="services-prices-wrap p-8 lg:p-16 flex flex-col gap-8 lg:w-10/12">
             <div class="inline-flex items-center gap-4">
                 <div class="wrap-icon wrap-icon--48 inline-flex items-center justify-center">
                     <img src="<?php echo THEME_IMG_PATH; ?>/asterix.svg" alt="Asterix icone"/>
@@ -135,7 +135,7 @@ if($servicesPrices): ?>
                 </p>
             </div>
             <div class="w-full h-72 services-prices-wrap__img">
-                <img class="object-cover h-full w-full" src="<?php echo $servicesPricesItem['services-price-image']['url']; ?>" alt="<?php echo $servicesPricesItem['services-price-image']['alt']; ?>">
+                <img class="object-cover object-center h-full w-full" src="<?php echo $servicesPricesItem['services-price-image']['url']; ?>" alt="<?php echo $servicesPricesItem['services-price-image']['alt']; ?>">
             </div>
             <?php
                 $servicesPricesListItems = $servicesPricesItem['services-price-list'];

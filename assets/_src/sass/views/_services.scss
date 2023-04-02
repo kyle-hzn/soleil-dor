@@ -23,10 +23,15 @@
 .services-prices-wrap {
 	background-color: $white;
 	border-radius: 64px;
-	padding: 64px;
+	@include breakpoint(small) {
+		border-radius: 32px;
+	}
 
 	&__img {
 		border-radius: 64px;
 		overflow: hidden;
+		@include breakpoint(small) {
+			border-radius: 48px;
+		}
 	}
 }

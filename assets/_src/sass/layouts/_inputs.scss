@@ -1,0 +1,8 @@
+@use '../global' as *;
+
+.input-field {
+	background-color: $white;
+	border: 1px solid $gray !important;
+	border-radius: 16px !important;
+	padding: 16px !important;
+}

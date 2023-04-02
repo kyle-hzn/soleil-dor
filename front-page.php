@@ -66,7 +66,7 @@ if($hpHero): ?>
                 </div>
                 <div class="inline-flex items-center">
                     <div class="wrap-icon wrap-icon--32 inline-flex items-center justify-center mr-2">
-                        <img src="<?php echo THEME_IMG_PATH; ?>/Phone-dial-2.svg" alt="Téléphone icone"/>
+                        <img src="<?php echo THEME_IMG_PATH; ?>/phone-dial-2.svg" alt="Téléphone icone"/>
                     </div>
                     <p class="body--m body-m-400 text--black">
                         <?php echo $hpHero['hp-hero-phone']; ?>
@@ -214,7 +214,7 @@ if($hpReviews): ?>
         <p class="subheading--2 text--white mb-4">
         <?php echo $hpReviews['hp-reviews-subheading']; ?>
         </p>
-        <div class="hp-reviews__list splide">
+        <div id="splide1" class="hp-reviews__list splide">
             <div class="splide__track">
                 <ul class="splide__list">
                 <?php

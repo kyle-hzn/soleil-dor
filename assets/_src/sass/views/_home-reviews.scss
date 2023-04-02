@@ -13,6 +13,10 @@
 		box-sizing: border-box;
 		padding: 32px;
 	}
+
+	.splide__pagination {
+		display: none;
+	}
 }
 
 .splide__arrow {
@@ -22,8 +26,4 @@
 	position: unset;
 	transform: unset;
 	width: 48px;
-}
-
-.splide__pagination {
-	display: none;
 }

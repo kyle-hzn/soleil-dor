@@ -1,0 +1,18 @@
+@use '../global' as *;
+
+.ba-cards {
+	&__item {
+		background: $layer-1;
+		border-radius: 64px;
+		@include breakpoint(small) {
+			border-radius: 32px;
+		}
+
+		&__photos {
+			border-radius: 64px;
+			@include breakpoint(small) {
+				border-radius: 32px;
+			}
+		}
+	}
+}

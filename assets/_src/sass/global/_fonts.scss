@@ -39,6 +39,11 @@
 	letter-spacing: -0.05em;
 	line-height: 52px;
 	src: url('../fonts/Recoleta-Medium.woff');
+
+	@include breakpoint(small) {
+		font-size: 32px;
+		line-height: 34px;
+	}
 }
 
 .heading--4 {

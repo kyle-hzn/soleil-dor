@@ -1,0 +1,94 @@
+@use '../global' as *;
+
+.contact-wrap {
+	&__left {
+		background: $layer-1;
+		border-radius: 64px;
+		@include breakpoint(small) {
+			border-radius: 32px;
+		}
+	}
+
+	&__review {
+		background: $layer-2;
+		border-radius: 24px;
+	}
+
+	&__reviews {
+		.splide__arrows {
+			display: none;
+		}
+
+		.splide__pagination__page {
+			background-color: $gray;
+		}
+		
+		.splide__pagination__page.is-active {
+			background-color: $white;
+		}
+	}
+
+	&__warning {
+		background: $layer-1;
+		border-radius: 64px;
+	}
+
+	label {
+		color: $white;
+		color: $gray;
+		font-family: Work Sans;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: -0.03em;
+		line-height: 21px;
+		src: url('../fonts/WorkSans-Medium.woff');
+	}
+
+	.ff-message-success {
+		background-color: $white;
+		border: 0 !important;
+		border-radius: 24px;
+		border-radius: 24px;
+		color: $black;
+		display: flex;
+		flex-direction: column;
+		font-family: 'Work Sans';
+		font-style: normal;
+		gap: 8px;
+		padding: 24px !important;
+
+		h4 {
+			font-size: 24px;
+			font-weight: 700;
+			letter-spacing: -0.05em;
+			line-height: 26px;
+			padding-left: 28px;
+			position: relative;
+			src: url('../fonts/WorkSans-Bold.woff');
+
+			&::before {
+				background-image: url('../images/check.svg');
+				content: '';
+				height: 24px;
+				left: 0;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 24px;
+			}
+		}
+
+		p {
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: -0.03em;
+			line-height: 21px;
+			src: url('../fonts/WorkSans-Regular.woff');
+		}
+	}
+
+	.btn--primary {
+		background-color: $primary !important;
+	}
+}

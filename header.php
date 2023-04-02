@@ -33,22 +33,9 @@ if($headerMenu): ?>
 						</div>
 						<!-- Dropdown menu 1 -->
 						<div class="header-dropdown header-dropdown--1 header-dropdown--inactive inline-flex flex-col">
-							<a href="<?php echo esc_url( $headerMenu['header-menu-link-men-2']['url'] ); ?>" class="header-dropdown__link inline-flex mb-1">
-								<div class="header-dropdown__link__icon wrap-icon wrap-icon--48 inline-flex items-center justify-center mr-2">
-									<img src="<?php echo THEME_IMG_PATH; ?>/pin.svg" alt="Localisaion icone"/>
-								</div>
-								<div class="header-dropdown__link__text">
-									<p class="body--l body--l--500 text--black">
-										<?php echo esc_html( $headerMenu['header-menu-link-men-2']['title'] ); ?>
-									</p>
-									<p class="body--m body--m--400 text--black-light">
-										<?php echo $headerMenu['header-menu-text-men-2']; ?>
-									</p>
-								</div>
-							</a>
 							<a href="<?php echo esc_url( $headerMenu['header-menu-link-men-1']['url'] ); ?>" class="header-dropdown__link inline-flex">
 								<div class="header-dropdown__link__icon wrap-icon wrap-icon--48 inline-flex items-center justify-center mr-2">
-									<img src="<?php echo THEME_IMG_PATH; ?>/pin.svg" alt="Localisaion icone"/>
+									<img src="<?php echo $headerMenu['header-menu-icon-men-1']['url']; ?>" alt="<?php echo $headerMenu['header-menu-icon-men-1']['alt']; ?>"/>
 								</div>
 								<div class="header-dropdown__link__text">
 									<p class="body--l body--l--500 text--black">
@@ -56,6 +43,19 @@ if($headerMenu): ?>
 									</p>
 									<p class="body--m body--m--400 text--black-light">
 										<?php echo $headerMenu['header-menu-text-men-1']; ?>
+									</p>
+								</div>
+							</a>
+							<a href="<?php echo esc_url( $headerMenu['header-menu-link-men-2']['url'] ); ?>" class="header-dropdown__link inline-flex mb-1">
+								<div class="header-dropdown__link__icon wrap-icon wrap-icon--48 inline-flex items-center justify-center mr-2">
+									<img src="<?php echo $headerMenu['header-menu-icon-men-2']['url']; ?>" alt="<?php echo $headerMenu['header-menu-icon-men-2']['alt']; ?>"/>
+								</div>
+								<div class="header-dropdown__link__text">
+									<p class="body--l body--l--500 text--black">
+										<?php echo esc_html( $headerMenu['header-menu-link-men-2']['title'] ); ?>
+									</p>
+									<p class="body--m body--m--400 text--black-light">
+										<?php echo $headerMenu['header-menu-text-men-2']; ?>
 									</p>
 								</div>
 							</a>
@@ -68,22 +68,9 @@ if($headerMenu): ?>
 						</div>
 						<!-- Dropdown menu 2 -->
 						<div class="header-dropdown header-dropdown--2 header-dropdown--inactive inline-flex flex-col">
-							<a href="<?php echo esc_url( $headerMenu['header-menu-link-women-2']['url'] ); ?>" class="header-dropdown__link inline-flex mb-1">
-								<div class="header-dropdown__link__icon wrap-icon wrap-icon--48 inline-flex items-center justify-center mr-2">
-									<img src="<?php echo THEME_IMG_PATH; ?>/pin.svg" alt="Localisaion icone"/>
-								</div>
-								<div class="header-dropdown__link__text">
-									<p class="body--l body--l--500 text--black">
-										<?php echo esc_html( $headerMenu['header-menu-link-women-2']['title'] ); ?>
-									</p>
-									<p class="body--m body--m--400 text--black-light">
-										<?php echo $headerMenu['header-menu-text-women-2']; ?>
-									</p>
-								</div>
-							</a>
 							<a href="<?php echo esc_url( $headerMenu['header-menu-link-women-1']['url'] ); ?>" class="header-dropdown__link inline-flex">
 								<div class="header-dropdown__link__icon wrap-icon wrap-icon--48 inline-flex items-center justify-center mr-2">
-									<img src="<?php echo THEME_IMG_PATH; ?>/pin.svg" alt="Localisaion icone"/>
+									<img src="<?php echo $headerMenu['header-menu-icon-women-1']['url']; ?>" alt="<?php echo $headerMenu['header-menu-icon-women-1']['alt']; ?>"/>
 								</div>
 								<div class="header-dropdown__link__text">
 									<p class="body--l body--l--500 text--black">
@@ -91,6 +78,19 @@ if($headerMenu): ?>
 									</p>
 									<p class="body--m body--m--400 text--black-light">
 										<?php echo $headerMenu['header-menu-text-women-1']; ?>
+									</p>
+								</div>
+							</a>
+							<a href="<?php echo esc_url( $headerMenu['header-menu-link-women-2']['url'] ); ?>" class="header-dropdown__link inline-flex mb-1">
+								<div class="header-dropdown__link__icon wrap-icon wrap-icon--48 inline-flex items-center justify-center mr-2">
+									<img src="<?php echo $headerMenu['header-menu-icon-women-2']['url']; ?>" alt="<?php echo $headerMenu['header-menu-icon-women-2']['alt']; ?>"/>
+								</div>
+								<div class="header-dropdown__link__text">
+									<p class="body--l body--l--500 text--black">
+										<?php echo esc_html( $headerMenu['header-menu-link-women-2']['title'] ); ?>
+									</p>
+									<p class="body--m body--m--400 text--black-light">
+										<?php echo $headerMenu['header-menu-text-women-2']; ?>
 									</p>
 								</div>
 							</a>
