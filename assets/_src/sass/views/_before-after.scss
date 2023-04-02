@@ -3,7 +3,7 @@
 .ba-cards {
 	&__item {
 		background: $layer-1;
-		border-radius: 64px;
+		border-radius: 76px;
 		@include breakpoint(small) {
 			border-radius: 32px;
 		}

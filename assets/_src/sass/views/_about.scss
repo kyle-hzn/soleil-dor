@@ -1,0 +1,36 @@
+@use '../global' as *;
+
+.about-intro {
+	&__image {
+		border-radius: 200px;
+		overflow: hidden;
+	}
+}
+
+.about-story {
+	&__images {
+		background: $layer-1;
+		border-radius: 76px;
+
+		&__card {
+			border-radius: 64px;
+			overflow: hidden;
+		}
+	}
+
+	&__left {
+		&__image {
+			border-radius: 64px;
+			overflow: hidden;
+		}
+	}
+}
+
+.about-partners {
+	&__right {
+		&__card {
+			background: $layer-1;
+			border-radius: 12px;
+		}
+	}
+}

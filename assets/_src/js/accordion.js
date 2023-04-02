@@ -1,3 +1,5 @@
+/* eslint-disable no-inner-declarations */
+
 function initAcc(elem, option) {
     // addEventListener on mouse click
     document.addEventListener('click', function(e) {
@@ -22,6 +24,6 @@ function initAcc(elem, option) {
       }
     });
   }
-  
-  // activate accordion function
-  initAcc('.hp-faq__list', true);
+
+// activate accordion function
+initAcc('.hp-faq__list', true);

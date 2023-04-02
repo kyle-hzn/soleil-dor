@@ -12,6 +12,9 @@ $hpHero = get_field('hp-hero');
 
 if($hpHero): ?>
 <section class="hp-hero lg:flex block justify-between h-screen pt-32">
+    <div class="hero-bg h-screen w-screen absolute left-2/4 -translate-x-2/4 right-0 top-0 -z-10">
+        <img class="object-cover h-full w-full" src="<?php echo THEME_IMG_PATH; ?>/background-wave.jpg" alt="Background"/>
+    </div>
     <div class="hp-hero__text">
         <h1 class="heading--1 text--white mb-8 hp-hero__title">
             <?php echo $hpHero['hp-hero-heading']; ?>

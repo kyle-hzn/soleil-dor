@@ -22,7 +22,7 @@ if($contactWrap): ?>
             </p>
             <div class="inline-flex items-center gap-2">
                 <div class="wrap-icon wrap-icon--48 inline-flex items-center justify-center">
-                    <img src="<?php echo THEME_IMG_PATH; ?>/phone-dial.svg" alt="Téléphone icone"/>
+                    <img src="<?php echo THEME_IMG_PATH; ?>/phone-dial-2.svg" alt="Téléphone icone"/>
                 </div>
                 <a href="<?php echo $contactWrap['contact-wrap-phone']['url']; ?>" class="subheading--1 subheading--1--s text--white">
                     <?php echo esc_html( $contactWrap['contact-wrap-phone']['title'] ); ?>

@@ -120,12 +120,12 @@ $servicesPrices = get_field('services-prices-group');
 
 if($servicesPrices): ?>
 
-<div class="flex flex-col gap-16 items-center">
+<div class="flex flex-col gap-16 lg:items-center">
     <?php
         $servicesPricesItems = $servicesPrices['services-prices'];
         foreach($servicesPricesItems as $servicesPricesItem): ?>
     
-        <div class="services-prices-wrap p-8 lg:p-16 flex flex-col gap-8 lg:w-10/12">
+        <div class="services-prices-wrap p-8 lg:p-16 flex flex-col gap-4 lg:gap-8 lg:w-10/12">
             <div class="inline-flex items-center gap-4">
                 <div class="wrap-icon wrap-icon--48 inline-flex items-center justify-center">
                     <img src="<?php echo THEME_IMG_PATH; ?>/asterix.svg" alt="Asterix icone"/>
