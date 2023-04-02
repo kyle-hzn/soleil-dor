@@ -12,10 +12,10 @@ $baHero = get_field('ba-hero');
 
 if($baHero): ?>
 <section class="ba-hero flex flex-col gap-8 items-center pt-32 mb-16">
-    <h1 class="heading--1 text--white text-center lg:w-6/12">
+    <h1 class="heading--1 text--white text-center lg:w-6/12 reveal--translate">
         <?php echo $baHero['ba-hero-heading']; ?>
     </h1>
-    <h2 class="subheading--1 subheading--1--s text--white text-center">
+    <h2 class="subheading--1 subheading--1--s text--white text-center reveal--translate">
         <?php echo $baHero['ba-hero-text']; ?>
     </h2>
 </section>
@@ -24,11 +24,11 @@ if($baHero): ?>
 $baList = get_field('ba-item');
 
 if($baList): ?>
-<section class="ba-cards flex flex-col items-center gap-12 mb-32">
+<section class="ba-cards flex flex-col items-center gap-12 mb-48">
     <?php
     $baListItems = $baList['ba-item-card'];
     foreach($baListItems as $baListItem): ?>
-    <div class="ba-cards__item flex flex-col p-8 lg:p-16 gap-8 lg:w-10/12">
+    <div class="ba-cards__item flex flex-col p-8 lg:p-16 gap-8 lg:w-10/12 reveal--fade">
         <div class="flex flex-col gap-4">
             <div class="inline-flex items-center gap-4">
                 <div class="wrap-icon wrap-icon--48 inline-flex items-center justify-center">

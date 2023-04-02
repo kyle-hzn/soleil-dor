@@ -92,3 +92,13 @@ add_action( 'wp_enqueue_scripts', function() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 } );
+
+/**
+ * Enqueue Scroll Reveal.
+*/
+add_action( 'wp_enqueue_scripts', 'custom_load_scrollreveal' );
+
+function custom_load_scrollreveal() {
+    wp_register_script( 'scroll-reveal', 'https://unpkg.com/scrollreveal', 0 );
+	wp_enqueue_script( 'scroll-reveal' );
+}

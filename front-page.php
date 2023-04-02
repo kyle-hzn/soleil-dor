@@ -16,20 +16,20 @@ if($hpHero): ?>
         <img class="object-cover h-full w-full" src="<?php echo THEME_IMG_PATH; ?>/background-wave.jpg" alt="Background"/>
     </div>
     <div class="hp-hero__text">
-        <h1 class="heading--1 text--white mb-8 hp-hero__title">
+        <h1 class="heading--1 text--white mb-8 hp-hero__title reveal--translate">
             <?php echo $hpHero['hp-hero-heading']; ?>
         </h1>
         <div class="hp-hero__intro pl-0 lg:pl-16">
             <div class="inline-flex items-center mb-4">
                 <img class="mr-1" src="<?php echo THEME_IMG_PATH; ?>/asterix.svg" alt="Asterix icone"/>
-                <h2 class="subheading--1 subheading--1--s text--white">
+                <h2 class="subheading--1 subheading--1--s text--white reveal--translate">
                     <?php echo $hpHero['hp-hero-subheading']; ?>
                 </h2>
             </div>
-            <div class="body--m body--m--400 text--white mb-6">
+            <div class="body--m body--m--400 text--white mb-6 reveal--translate">
                 <?php echo $hpHero['hp-hero-intro']; ?>
             </div>
-            <div class="hp-hero__card w-full lg:w-fit inline-flex flex-col">
+            <div class="hp-hero__card w-full lg:w-fit inline-flex flex-col reveal--translate">
                 <div class="inline-flex items-center mb-3">
                     <p class="body--m body-m-400 text--black">
                         <?php echo do_shortcode( '[mbhi_ifopen location="Soleil Dor"]
@@ -37,7 +37,7 @@ if($hpHero): ?>
                             <div class="hp-hero__card__timestamp hp-hero__card__timestamp--open"></div>
                         </div>
                         <p class="body--m body-m-400 text--black">
-                            Ouvert
+                            Ouvert en ce moment
                         </p>
                         [/mbhi_ifopen]' ); ?>
                         <?php echo do_shortcode( '[mbhi_ifclosed location="Soleil Dor"]
@@ -45,7 +45,7 @@ if($hpHero): ?>
                             <div class="hp-hero__card__timestamp hp-hero__card__timestamp--closed"></div>
                         </div>
                         <p class="body--m body-m-400 text--black">
-                            Fermé
+                            Fermé en ce moment
                         </p>
                         [/mbhi_ifclosed]' ); ?>
                     </p>
@@ -78,7 +78,7 @@ if($hpHero): ?>
             </div>
         </div>
     </div>
-    <div class="hp-hero__img w-full lg:w-80 h-52 lg:h-full mt-8 lg:mt-0">
+    <div class="hp-hero__img w-full lg:w-80 h-52 lg:h-full mt-8 lg:mt-0 reveal--fade">
         <img class="object-cover h-full w-full" src="<?php echo $hpHero['hp-hero-img']['url']; ?>" alt="<?php echo $hpHero['hp-hero-img']['alt']; ?>"/>
     </div>
 </section>
@@ -89,13 +89,13 @@ $hpServices = get_field('hp-services');
 
 if($hpServices): ?>
 <section class="hp-services pt-20 mb-48">
-    <h2 class="heading--3 text-white mb-8">
+    <h2 class="heading--3 text-white mb-8 reveal--translate">
         <?php echo $hpServices['hp-services-heading']; ?>
     </h2>
     <?php
     $servicesItems = $hpServices['hp-services-list'];
     foreach($servicesItems as $servicesItem): ?>
-    <div class="services-card flex flex-col lg:flex-row lg:flex mb-4 last:mb-0 gap-4">
+    <div class="services-card flex flex-col lg:flex-row lg:flex mb-4 last:mb-0 gap-4 reveal--fade">
         <div class="services-card__about flex flex-col justify-between w-full">
             <div class="services-card__about__title inline-flex items-center mb-4">
                 <div class="wrap-icon wrap-icon--48 inline-flex items-center justify-center mr-4">
@@ -138,26 +138,26 @@ $hpAbout = get_field('hp-about');
 
 if($hpAbout): ?>
 <section class="hp-about mb-48">
-    <h3 class="heading--2 text--white text-center lg:px-32 mb-14">
+    <h3 class="heading--2 text--white text-center lg:px-32 mb-14 reveal--translate">
         <?php echo $hpAbout['hp-about-heading']; ?>
     </h3>
     <div class="hp-about__thumbnails flex gap-4 mb-10">
-        <div class="w-2/12">
+        <div class="w-2/12 reveal--translate">
             <img src="<?php echo $hpAbout['hp-about-image-top-left']['url']; ?>" alt="<?php echo $hpAbout['hp-about-image-top-left']['alt']; ?>" class="hp-about__img hp-about__img--top-left aspect-square scale-75 object-cover">
         </div>
-        <div class="w-8/12">
+        <div class="w-8/12 reveal--fade">
             <img src="<?php echo $hpAbout['hp-about-image-center']['url']; ?>" alt="<?php echo $hpAbout['hp-about-image-center']['center']; ?>" class="hp-about__img hp-about__img--center w-full h-96 object-cover">
         </div>
         <div class="w-2/12 my-auto">
-            <img src="<?php echo $hpAbout['hp-about-img-top-right']['url']; ?>" alt="<?php echo $hpAbout['hp-about-img-top-right']['alt']; ?>" class="hp-about__img hp-about__img--top-right w-full h-32 object-cover">
-            <img src="<?php echo $hpAbout['hp-about-img-bottom-right']['url']; ?>" alt="<?php echo $hpAbout['hp-about-img-bottom-right']['alt']; ?>" class="hp-about__img hp-about__img--bottom-right w-full aspect-square scale-50 object-cover">
+            <img src="<?php echo $hpAbout['hp-about-img-top-right']['url']; ?>" alt="<?php echo $hpAbout['hp-about-img-top-right']['alt']; ?>" class="hp-about__img hp-about__img--top-right w-full h-32 object-cover reveal--translate">
+            <img src="<?php echo $hpAbout['hp-about-img-bottom-right']['url']; ?>" alt="<?php echo $hpAbout['hp-about-img-bottom-right']['alt']; ?>" class="hp-about__img hp-about__img--bottom-right w-full aspect-square scale-50 object-cover reveal--translate">
         </div>
     </div>
     <div class="hp-about__keystats flex gap-2 lg:gap-x-2 overflow-x-scroll lg:overflow-x-auto lg:justify-center mb-6 lg:mb-14">
         <?php
         $hpAboutKeystatsItems = $hpAbout['hp-about-keystats-items'];
         foreach($hpAboutKeystatsItems as $hpAboutKeystatsItem): ?>
-        <div class="hp-about__keystats__card inline-flex flex-col">
+        <div class="hp-about__keystats__card inline-flex flex-col reveal--fade">
             <p class="heading--1 text--white">
                 <?php echo $hpAboutKeystatsItem['hp-about-keystats-items-number']; ?>
             </p>
@@ -167,7 +167,7 @@ if($hpAbout): ?>
         </div>
         <?php endforeach; ?>
     </div>
-    <div class="hp-about__text flex flex-col items-center">
+    <div class="hp-about__text flex flex-col items-center reveal--fade">
         <div class="lg:w-6/12 body--l body--l--400 text--white mb-6 lg:mb-12 flex flex-col gap-4">
             <?php echo $hpAbout['hp-about-text']; ?>
         </div>
@@ -187,11 +187,11 @@ $hpReviews = get_field('hp-reviews');
 
 if($hpReviews): ?>
 <section class="hp-reviews flex flex-col lg:flex-row gap-8 mb-40">
-    <div class="lg:w-6/12">
-        <h3 class="heading--3 heading--3 text--white mb-3">
+    <div class="lg:w-6/12 inline-flex flex-col">
+        <h3 class="heading--3 heading--3 text--white mb-3 reveal--translate">
             <?php echo $hpReviews['hp-reviews-heading']; ?>
         </h3>
-        <div class="hp-reviews__google inline-flex gap-2 mb-6">
+        <div class="hp-reviews__google w-fit inline-flex gap-2 mb-6 reveal--translate">
             <img src="<?php echo THEME_IMG_PATH; ?>/google-logo.svg" alt="Logo Google"/>
             <div class="hp-reviews__google__text">
                 <p class="body--l body--l--500 text--black">
@@ -205,12 +205,12 @@ if($hpReviews): ?>
                 </div>
             </div>
         </div>
-        <a href="<?php echo esc_url( $hpReviews['hp-reviews-link']['url'] ); ?>" class="btn--primary header__menu__btn w-fit">
+        <a href="<?php echo esc_url( $hpReviews['hp-reviews-link']['url'] ); ?>" class="btn--primary header__menu__btn w-fit reveal--translate">
             <img class="btn--primary__icon mr-2" src="<?php echo $hpReviews['hp-reviews-link-icon']['url']; ?>" alt="<?php echo $hpReviews['hp-reviews-link-icon']['alt']; ?>"/>
             <?php echo esc_html( $hpReviews['hp-reviews-link']['title'] ); ?>
         </a>
     </div>
-    <div class="lg:w-6/12">
+    <div class="lg:w-6/12 reveal--fade">
         <div class="body--l body--l--400 text--white mb-10">
             <?php echo $hpReviews['hp-reviews-text']; ?>
         </div>
@@ -254,10 +254,10 @@ $hpFaq = get_field('hp-faq');
 if($hpFaq): ?>
 <section class="hp-faq flex justify-center mb-48">
     <div class="w-full lg:w-10/12">
-        <h3 class="heading--3 text--white text-center mb-8">
+        <h3 class="heading--3 text--white text-center mb-8 reveal--translate">
             <?php echo $hpFaq['hp-faq-heading']; ?>
         </h3>
-        <div class="hp-faq__list grid gap-4 grid-cols-1 lg:grid-cols-2">
+        <div class="hp-faq__list grid gap-4 grid-cols-1 lg:grid-cols-2 reveal--fade">
             <?php
             $hpFaqItems = $hpFaq['hp-faq-list'];
             foreach($hpFaqItems as $hpFaqItem): ?>
@@ -282,12 +282,12 @@ if($hpFaq): ?>
 $hpContact = get_field('hp-contact');
 
 if($hpContact): ?>
-<section class="hp-contact flex flex-col lg:flex-row gap-8 lg:gap-24 items-center">
+<section class="hp-contact flex flex-col lg:flex-row gap-8 lg:gap-24 items-center mb-48">
     <div class="hp-contact__text lg:w-6/12">
-        <h3 class="heading--3 text--white mb-8">
+        <h3 class="heading--3 text--white mb-8 reveal--translate">
             <?php echo $hpContact['hp-contact-heading']; ?>
         </h3>
-        <div class="inline-flex items-center mb-6 lg:mb-24">
+        <div class="inline-flex items-center mb-6 lg:mb-24 reveal--fade">
             <div class="wrap-icon wrap-icon--40 inline-flex items-center justify-center mr-2">
                 <img src="<?php echo THEME_IMG_PATH; ?>/pin.svg" alt="Localisaion icone"/>
             </div>
@@ -314,7 +314,7 @@ if($hpContact): ?>
             <?php echo esc_html( $hpContact['hp-contact-button']['title'] ); ?>
         </a>
     </div>
-    <div class="hp-contact__map lg:w-6/12">
+    <div class="hp-contact__map lg:w-6/12 reveal--fade">
         <div class="hp-contact__map__box h-full w-full">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10491.552547588535!2d2.087615!3d48.898469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e688325112c71d%3A0x95a6f0af6fbfec8!2sSoleil%20d&#39;Or!5e0!3m2!1sfr!2sfr!4v1679959457770!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>

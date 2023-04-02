@@ -7,7 +7,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body class="container mx-auto px-4 lg:px-0 overflow-x-hidden">
+<body class="">
 <?php wp_body_open(); ?>
 
 <?php
@@ -105,7 +105,7 @@ if($headerMenu): ?>
 				</div>
 				<a href="<?php echo esc_url( $headerMenu['header-menu-link-contact']['url'] ); ?>" class="btn--primary header__menu__btn">
 					<img class="btn--primary__icon mr-2" src="<?php echo THEME_IMG_PATH; ?>/phone-dial.svg" alt="Téléphoner"/>
-						<?php echo esc_html( $headerMenu['header-menu-link-contact']['title'] ); ?>
+					<?php echo esc_html( $headerMenu['header-menu-link-contact']['title'] ); ?>
 				</a>
 			</div>
 		</div>
@@ -127,4 +127,4 @@ if($headerMenu): ?>
 </header>
 <?php endif; ?>
 
-<main class="app-main" role="main">
+<main class="app-main container mx-auto px-4 lg:px-0 overflow-x-hidden" role="main">

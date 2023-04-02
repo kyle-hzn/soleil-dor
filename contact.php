@@ -11,8 +11,8 @@
 $contactWrap = get_field('contact-wrap');
 
 if($contactWrap): ?>
-<section class="contact-wrap flex flex-col lg:flex-row gap-12 pt-32 lg:h-screen mb-32">
-    <div class="contact-wrap__left p-8 lg:p-16 lg:w-6/12 min-h-full flex flex-col justify-between">
+<section class="contact-wrap flex flex-col lg:flex-row gap-12 pt-32 lg:h-screen mb-48">
+    <div class="contact-wrap__left p-8 lg:p-16 lg:w-6/12 min-h-full flex flex-col justify-between reveal--fade">
         <div class="flex flex-col gap-4 mb-4">
             <h1 class="heading--3 text--white">
                 <?php echo $contactWrap['contact-wrap-heading']; ?>
@@ -49,7 +49,7 @@ if($contactWrap): ?>
             </div>
         </section>
     </div>
-    <div class="contact-wrap__right lg:w-6/12 flex flex-col gap-4">
+    <div class="contact-wrap__right lg:w-6/12 flex flex-col gap-4 reveal--fade">
         <p class="subheading--1 subheading--1--m text--white">
             <?php echo $contactWrap['contact-wrap-form-heading']; ?>
         </p>

@@ -17,10 +17,10 @@ if($aboutIntro): ?>
         <div class="hero-bg h-screen w-screen absolute left-2/4 -translate-x-2/4 right-0 top-0 -z-10">
             <img class="object-cover h-full w-full" src="<?php echo THEME_IMG_PATH; ?>/background-wave.jpg" alt="Background"/>
         </div>
-        <h1 class="heading--1 text--white text-center mb-6 lg:w-1/2">
+        <h1 class="heading--1 text--white text-center mb-6 lg:w-1/2 reveal--translate">
             <?php echo $aboutIntro['about-intro-heading']; ?>
         </h1>
-        <div class="inline-flex items-center justify-center gap-2 mb-12">
+        <div class="inline-flex items-center justify-center gap-2 mb-12 reveal--fade">
             <div class="wrap-icon wrap-icon--32 inline-flex items-center justify-center">
                 <img src="<?php echo THEME_IMG_PATH; ?>/asterix.svg" alt="Asterix icone"/>
             </div>
@@ -28,10 +28,10 @@ if($aboutIntro): ?>
                 <?php echo $aboutIntro['about-intro-subheading']; ?>
             </h2>
         </div>
-        <div class="about-intro__image h-screen w-80 mb-16">
+        <div class="about-intro__image h-screen w-80 mb-16 reveal--fade">
             <img class="object-cover object-center w-full h-full" src="<?php echo $aboutIntro['about-intro-image']['url']; ?>" alt="<?php echo $aboutIntro['about-intro-image']['alt']; ?>">
         </div>
-        <div class="heading--4 text--white text-center">
+        <div class="heading--4 text--white text-center reveal--fade">
             <?php echo $aboutIntro['about-intro-text']; ?>
         </div>
     </div>
@@ -45,17 +45,17 @@ $aboutStory = get_field('about-story');
 if($aboutStory): ?>
 
 <section class="about-story mb-20">
-    <div class="about-story__images flex flex-col lg:flex-row gap-4 p-8 mb-10">
+    <div class="about-story__images flex flex-col lg:flex-row gap-4 p-8 mb-10 reveal--translate">
         <?php
         $aboutStoryListItems = $aboutStory['about-story-images'];
         foreach($aboutStoryListItems as $aboutStoryListItem): ?>
-        <div class="about-story__images__card aspect-square w-full overflow-hidden">
+        <div class="about-story__images__card aspect-square w-full overflow-hidden reveal--fade">
             <img class="object-cover object-center w-full h-full" src="<?php echo $aboutStoryListItem['about-story-images-item']['url']; ?>" alt="<?php echo $aboutStoryListItem['about-story-images-item']['alt']; ?>">
         </div>
         <?php endforeach; ?>
     </div>
-    <div class="flex flex-col lg:flex-row lg:gap-8 gap-4 h-full justify-between lg:w-10/12 lg:mx-auto">
-        <div class="about-story__left lg:w-6/12">
+    <div class="flex flex-col lg:flex-row lg:gap-8 gap-4 lg:w-10/12 lg:mx-auto h-full reveal--fade">
+        <div class="about-story__left lg:w-6/12 h-auto justify-between flex flex-col">
             <h3 class="heading--3 text--white mb-4 lg:mb-16">
                 <?php echo $aboutStory['about-story-heading']; ?>
             </h3>
@@ -79,7 +79,7 @@ $aboutPartners = get_field('about-partners');
 
 if($aboutPartners): ?>
 
-<section class="about-partners mb-32">
+<section class="about-partners mb-48 reveal--fade">
     <div class="flex flex-col lg:flex-row gap-8 h-full justify-between lg:w-10/12 lg:mx-auto">
         <div class="about-partners__left lg:w-6/12">
             <h3 class="heading--3 text--white">

@@ -1,8 +1,6 @@
 @use '../global' as *;
 
 .hp-hero {
-	position: relative;
-
 	&::after {
 		background-color: $white-dark;
 		bottom: 0;
