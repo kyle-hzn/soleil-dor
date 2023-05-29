@@ -3,6 +3,7 @@
 .btn--primary {
 	align-items: center;
 	background-color: $primary;
+	border: 1px solid $primary;
 	border-radius: 50px;
 	color: $white;
 	display: inline-flex;
@@ -16,4 +17,11 @@
 	line-height: 21px;
 	padding: 20px;
 	src: url('../fonts/WorkSans-Medium.woff');
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background-color: transparent;
+		border: 1px solid $primary;
+		color: $primary;
+	}
 }

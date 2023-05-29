@@ -102,3 +102,13 @@ function custom_load_scrollreveal() {
     wp_register_script( 'scroll-reveal', 'https://unpkg.com/scrollreveal', 0 );
 	wp_enqueue_script( 'scroll-reveal' );
 }
+
+/**
+ * Enqueue Smooth scroll.
+*/
+add_action( 'wp_enqueue_scripts', 'custom_load_lenis' );
+
+function custom_load_lenis() {
+    wp_register_script( 'lenis', 'https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.0/bundled/lenis.js', 0 );
+	wp_enqueue_script( 'lenis' );
+}

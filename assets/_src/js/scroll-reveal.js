@@ -8,7 +8,7 @@ ScrollReveal().reveal('.reveal--translate',
       interval: 200,
       reset: false,
       scale: 1,
-      delay: 100,
+      delay: 0,
     });
 
 ScrollReveal().reveal('.reveal--fade',
@@ -20,3 +20,12 @@ ScrollReveal().reveal('.reveal--fade',
       scale: 1,
       delay: 100,
     });
+
+const lenis = new Lenis()
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)

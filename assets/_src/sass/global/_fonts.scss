@@ -64,6 +64,11 @@
 	letter-spacing: -0.03em;
 	line-height: 26px;
 
+	@include breakpoint(small) {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
 	&--s {
 		font-weight: 300;
 		src: url('../fonts/Recoleta-Light.woff');

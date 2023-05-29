@@ -7,6 +7,7 @@
 <?php get_header(); ?>
 <?php include get_theme_file_path( 'mobile-nav.php' ); ?>
 
+<!-- Bronzage -->
 <?php
 $servicesHeroType = get_field('service-bool');
 
@@ -78,7 +79,9 @@ if($servicesHeroType): ?>
         </div>
     </section>
     <?php endif; ?>
+<!-- Bronzage -->
 
+<!-- Soins & Épilation -->
     <?php else: ?>
     <?php
     $servicesHero1 = get_field('service-hero-1');
@@ -106,13 +109,14 @@ if($servicesHeroType): ?>
                 </div>
             </div>
         </div>
-        <div class="scroll-icon hidden lg:inline-flex items-center justify-center">
+        <a href="#" data-target="services-prices" class="scroll-icon hidden lg:inline-flex items-center justify-center">
             <img src="<?php echo THEME_IMG_PATH; ?>/arrow-down-scroll.svg" alt="Flèche icone"/>
-        </div>
+        </a>
     </section>
 
     <?php endif; ?>
-    
+<!-- Soins & Épilation -->
+
 <?php endif; ?>
 
 <?php
@@ -120,12 +124,12 @@ $servicesPrices = get_field('services-prices-group');
 
 if($servicesPrices): ?>
 
-<div class="flex flex-col gap-16 lg:items-center mb-48">
+<div class="flex flex-col gap-16 lg:items-center mb-48 services-prices">
     <?php
         $servicesPricesItems = $servicesPrices['services-prices'];
         foreach($servicesPricesItems as $servicesPricesItem): ?>
     
-        <div class="services-prices-wrap p-8 lg:p-16 flex flex-col gap-4 lg:gap-8 lg:w-10/12 reveal--fade">
+        <div class="services-prices-wrap p-8 lg:p-16 flex flex-col gap-8 lg:gap-4 lg:gap-8 lg:w-10/12 reveal--fade">
             <div class="inline-flex items-center gap-4">
                 <div class="wrap-icon wrap-icon--48 inline-flex items-center justify-center">
                     <img src="<?php echo THEME_IMG_PATH; ?>/asterix.svg" alt="Asterix icone"/>
@@ -134,13 +138,13 @@ if($servicesPrices): ?>
                     <?php echo $servicesPricesItem['services-price-heading']; ?>
                 </p>
             </div>
-            <div class="w-full h-72 services-prices-wrap__img">
+            <div class="w-full aspect-video lg:h-72 services-prices-wrap__img">
                 <img class="object-cover object-center h-full w-full" src="<?php echo $servicesPricesItem['services-price-image']['url']; ?>" alt="<?php echo $servicesPricesItem['services-price-image']['alt']; ?>">
             </div>
             <?php
                 $servicesPricesListItems = $servicesPricesItem['services-price-list'];
                 foreach($servicesPricesListItems as $servicesPricesListItem): ?>
-                <div class="list--item list--item--dark flex justify-between pb-6">
+                <div class="list--item list--item--dark flex justify-between pb-6 gap-4">
                     <p class="subheading--1 subheading--1--s text--black">
                         <?php echo $servicesPricesListItem['services-price-list-name']; ?>
                     </p>

@@ -44,16 +44,16 @@ if($baList): ?>
         </div>
         <div class="flex gap-3 lg:gap-6 flex-row">
             <div class="flex flex-col gap-4 justify-center w-full">
-                <div class="ba-cards__item__photos lg:h-80 h-56 w-full overflow-hidden">
-                    <img class="object-cover object-center w-full h-full" src="<?php echo $baListItem['ba-item-image-card-before']['url']; ?>" alt="<?php echo $baListItem['ba-item-image-card-before']['alt']; ?>">
+                <div class="ba-cards__item__photos w-full overflow-hidden">
+                    <img class="object-cover object-center w-full h-full aspect-video" src="<?php echo $baListItem['ba-item-image-card-before']['url']; ?>" alt="<?php echo $baListItem['ba-item-image-card-before']['alt']; ?>">
                 </div>
                 <p class="label-m text--white text-center">
                     Avant
                 </p>
             </div>
             <div class="flex flex-col gap-4 justify-center w-full">
-            <div class="ba-cards__item__photos lg:h-80 h-56 w-full overflow-hidden">
-                <img class="object-cover object-center w-full h-full" src="<?php echo $baListItem['ba-item-image-card-after']['url']; ?>" alt="<?php echo $baListItem['ba-item-image-card-after']['alt']; ?>">
+            <div class="ba-cards__item__photos w-full overflow-hidden">
+                <img class="object-cover object-center w-full h-full aspect-video" src="<?php echo $baListItem['ba-item-image-card-after']['url']; ?>" alt="<?php echo $baListItem['ba-item-image-card-after']['alt']; ?>">
             </div>
             <p class="label-m text--white text-center">
                     Après

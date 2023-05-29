@@ -1,6 +1,6 @@
 </main>
 
-<footer class="footer flex flex-col lg:flex-row justify-between w-full gap-8 lg:gap-0">
+<footer class="footer flex flex-col lg:flex-row justify-between w-full gap-8 lg:gap-0 transition--fade">
 
 <?php
 $footerMenuLeft = get_field('footer-left', 'option');
