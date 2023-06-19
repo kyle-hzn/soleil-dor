@@ -1,16 +1,6 @@
 @use '../global' as *;
 
 .hp-hero {
-	&::after {
-		background-color: $white-dark;
-		bottom: 0;
-		content: '';
-		height: 2px;
-		left: calc(-50vw + 50%);
-		position: absolute;
-		width: 100vw;
-	}
-
 	&__title {
 		width: 32rem;
 
@@ -43,7 +33,7 @@
 	}
 
 	&__img {
-		border-radius: 150px 150px 0 0;
+		border-radius: 150px;
 		height: 100%;
 		overflow: hidden;
 

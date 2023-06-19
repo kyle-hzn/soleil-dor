@@ -11,8 +11,8 @@
 $hpHero = get_field('hp-hero');
 
 if($hpHero): ?>
-<section class="hp-hero lg:flex block justify-between h-screen pt-32">
-    <div class="hero-bg h-screen w-screen absolute left-2/4 -translate-x-2/4 right-0 top-0 -z-10">
+<section class="hp-hero lg:flex block justify-between pt-32">
+    <div class="hero-bg h-auto w-screen absolute left-2/4 -translate-x-2/4 right-0 top-0 -z-10">
         <img class="object-cover h-full w-full" src="<?php echo THEME_IMG_PATH; ?>/background-wave.jpg" alt="Background"/>
     </div>
     <div class="hp-hero__text">
@@ -29,7 +29,7 @@ if($hpHero): ?>
             <div class="body--m body--m--400 text--white mb-6 reveal--translate">
                 <?php echo $hpHero['hp-hero-intro']; ?>
             </div>
-            <div class="hp-hero__card w-full lg:w-fit inline-flex flex-col reveal--translate">
+            <div class="hp-hero__card w-full lg:w-4/6 inline-flex flex-col reveal--translate">
                 <div class="inline-flex items-center mb-3">
                     <p class="body--m body-m-400 text--black">
                         <?php echo do_shortcode( '[mbhi_ifopen location="Soleil Dor"]
@@ -55,7 +55,7 @@ if($hpHero): ?>
                         <img src="<?php echo THEME_IMG_PATH; ?>/clock.svg" alt="Horaires icone"/>
                     </div>
                     <p class="body--m body-m-400 text--black">
-                        <?php echo $hpHero['hp-hero-openings']; ?>
+                        Sur RDV → Lun. - Dim. 10:00 - 13:00 <br> Sans RDV → Lun. - Sam. 13:00 - 19:00
                     </p>
                 </div>
                 <div class="inline-flex items-center mb-3">
@@ -78,7 +78,7 @@ if($hpHero): ?>
             </div>
         </div>
     </div>
-    <div class="hp-hero__img w-full lg:w-80 h-52 lg:h-full mt-8 lg:mt-0 reveal--fade">
+    <div class="hp-hero__img w-full lg:w-80 h-52 lg:h-auto mt-8 lg:mt-0 reveal--fade">
         <img class="object-cover h-full w-full" src="<?php echo $hpHero['hp-hero-img']['url']; ?>" alt="<?php echo $hpHero['hp-hero-img']['alt']; ?>"/>
     </div>
 </section>
@@ -205,7 +205,7 @@ if($hpReviews): ?>
                 </div>
             </div>
         </div>
-        <a href="<?php echo esc_url( $hpReviews['hp-reviews-link']['url'] ); ?>" class="btn--primary header__menu__btn w-fit reveal--translate">
+        <a target="_blank" href="<?php echo esc_url( $hpReviews['hp-reviews-link']['url'] ); ?>" class="btn--primary header__menu__btn w-fit reveal--translate">
             <img class="btn--primary__icon mr-2" src="<?php echo $hpReviews['hp-reviews-link-icon']['url']; ?>" alt="<?php echo $hpReviews['hp-reviews-link-icon']['alt']; ?>"/>
             <?php echo esc_html( $hpReviews['hp-reviews-link']['title'] ); ?>
         </a>

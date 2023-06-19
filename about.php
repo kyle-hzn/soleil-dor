@@ -67,7 +67,7 @@ if($aboutStory): ?>
             <div class="body--l body--l--400 text--white">
                 <?php echo $aboutStory['about-story-text']; ?>
             </div>
-            <img class="object-cover object-center max-w-sm" src="<?php echo $aboutStory['about-story-signature']['url']; ?>" alt="<?php echo $aboutStory['about-story-signature']['alt']; ?>">
+            <img class="object-contain max-w-sm h-48" src="<?php echo $aboutStory['about-story-signature']['url']; ?>" alt="<?php echo $aboutStory['about-story-signature']['alt']; ?>">
         </div>
     </div>
 </section>
