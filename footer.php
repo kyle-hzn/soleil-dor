@@ -15,7 +15,7 @@ if($footerMenuLeft): ?>
             <div class="inline-flex items-center gap-2">
                 <img src="<?php echo THEME_IMG_PATH; ?>/clock-sm.svg" alt="Horaires icone"/>
                 <p class="label--m text--black">
-                    <?php echo $footerMenuLeft['footer-left-time']; ?>
+                    Sur RDV → Lun. - Dim. 10:00 - 13:00 <br> Sans RDV → Lun. - Sam. 13:00 - 19:00
                 </p>
             </div>
             <div class="inline-flex items-center gap-2">

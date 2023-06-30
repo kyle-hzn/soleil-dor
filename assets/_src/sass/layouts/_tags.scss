@@ -1,7 +1,7 @@
 @use '../global' as *;
 
 .tag-item {
-	background-color: $white;
+	background: $layer-2;
 	border-radius: 50px;
-	padding: 12px;
+	padding: 4px 12px;
 }

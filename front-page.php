@@ -11,7 +11,7 @@
 $hpHero = get_field('hp-hero');
 
 if($hpHero): ?>
-<section class="hp-hero lg:flex block justify-between pt-32">
+<section class="hp-hero lg:flex block justify-between pt-32 gap-8">
     <div class="hero-bg h-auto w-screen absolute left-2/4 -translate-x-2/4 right-0 top-0 -z-10">
         <img class="object-cover h-full w-full" src="<?php echo THEME_IMG_PATH; ?>/background-wave.jpg" alt="Background"/>
     </div>
@@ -26,7 +26,7 @@ if($hpHero): ?>
                     <?php echo $hpHero['hp-hero-subheading']; ?>
                 </h2>
             </div>
-            <div class="body--m body--m--400 text--white mb-6 reveal--translate">
+            <div class="w-2/3 body--m body--m--400 text--white mb-6 reveal--translate">
                 <?php echo $hpHero['hp-hero-intro']; ?>
             </div>
             <div class="hp-hero__card w-full lg:w-4/6 inline-flex flex-col reveal--translate">
@@ -71,9 +71,9 @@ if($hpHero): ?>
                     <div class="wrap-icon wrap-icon--32 inline-flex items-center justify-center mr-2">
                         <img src="<?php echo THEME_IMG_PATH; ?>/phone-dial-2.svg" alt="Téléphone icone"/>
                     </div>
-                    <p class="body--m body-m-400 text--black">
-                        <?php echo $hpHero['hp-hero-phone']; ?>
-                    </p>
+                    <a href="<?php echo $hpHero['hp-hero-phone']['url']; ?>" class="body--m body-m-400 text--black">
+                        <?php echo esc_html( $hpHero['hp-hero-phone']['title'] ); ?>
+                    </a>
                 </div>
             </div>
         </div>
@@ -149,7 +149,7 @@ if($hpAbout): ?>
             <img src="<?php echo $hpAbout['hp-about-image-center']['url']; ?>" alt="<?php echo $hpAbout['hp-about-image-center']['center']; ?>" class="hp-about__img hp-about__img--center w-full h-96 object-cover">
         </div>
         <div class="w-2/12 my-auto">
-            <img src="<?php echo $hpAbout['hp-about-img-top-right']['url']; ?>" alt="<?php echo $hpAbout['hp-about-img-top-right']['alt']; ?>" class="hp-about__img hp-about__img--top-right w-full h-32 object-cover reveal--translate">
+            <img src="<?php echo $hpAbout['hp-about-img-top-right']['url']; ?>" alt="<?php echo $hpAbout['hp-about-img-top-right']['alt']; ?>" class="hp-about__img hp-about__img--top-right w-full h-32 object-cover mb-4 reveal--translate">
             <img src="<?php echo $hpAbout['hp-about-img-bottom-right']['url']; ?>" alt="<?php echo $hpAbout['hp-about-img-bottom-right']['alt']; ?>" class="hp-about__img hp-about__img--bottom-right w-full aspect-square scale-50 object-cover reveal--translate">
         </div>
     </div>

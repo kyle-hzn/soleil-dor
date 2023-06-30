@@ -20,11 +20,11 @@ if($aboutIntro): ?>
         <h1 class="heading--1 text--white text-center mb-6 lg:w-1/2 reveal--translate">
             <?php echo $aboutIntro['about-intro-heading']; ?>
         </h1>
-        <div class="inline-flex items-center justify-center gap-2 mb-12 reveal--fade">
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-12 reveal--fade">
             <div class="wrap-icon wrap-icon--32 inline-flex items-center justify-center">
                 <img src="<?php echo THEME_IMG_PATH; ?>/asterix.svg" alt="Asterix icone"/>
             </div>
-            <h2 class="subheading--1 subheading--1--s text--white">
+            <h2 class="subheading--1 subheading--1--s text--white text-center">
                 <?php echo $aboutIntro['about-intro-subheading']; ?>
             </h2>
         </div>
@@ -91,7 +91,7 @@ if($aboutPartners): ?>
             $aboutPartnersItems = $aboutPartners['about-partners-list'];
             foreach($aboutPartnersItems as $aboutPartnersItem): ?>
             <div class="about-partners__right__card w-full p-8 inline-flex items-center justify-center">
-                <img class="object-cover object-center max-w-xs" src="<?php echo $aboutPartnersItem['about-partners-list-image']['url']; ?>" alt="<?php echo $aboutPartnersItem['about-partners-list-image']['alt']; ?>">
+                <img class="w-full object-cover object-center max-w-xs" src="<?php echo $aboutPartnersItem['about-partners-list-image']['url']; ?>" alt="<?php echo $aboutPartnersItem['about-partners-list-image']['alt']; ?>">
             </div>
             <?php endforeach; ?>
         </div>

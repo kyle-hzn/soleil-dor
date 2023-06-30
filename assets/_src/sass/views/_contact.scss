@@ -121,3 +121,19 @@
 		src: url('../fonts/WorkSans-Regular.woff');
 	}
 }
+
+.form-btn--primary {
+	background-color: $primary !important;
+	border: 1px solid $primary !important;
+	border-radius: 50px !important;
+	color: $white !important;
+	font-size: 16px !important;
+	font-weight: 500 !important;
+	padding: 20px !important;
+
+	&:hover {
+		background-color: transparent;
+		border: 1px solid $primary;
+		color: $primary;
+	}
+}

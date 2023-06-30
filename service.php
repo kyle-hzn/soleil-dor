@@ -17,7 +17,7 @@ if($servicesHeroType): ?>
     $servicesHero2 = get_field('service-hero-2');
     if($servicesHero2): ?>
     <section class="services-hero pt-32 lg:h-screen relative mb-24">
-        <div class="flex flex-col lg:flex-row justify-between h-full">
+        <div class="flex flex-col lg:flex-row justify-between h-full gap-4">
             <div class="flex flex-col lg:w-7/12 gap-4">
                 <h1 class="heading--1 text--white mb-8 reveal--translate">
                     <?php echo $servicesHero2['services-hero-2-heading']; ?>
@@ -30,39 +30,11 @@ if($servicesHeroType): ?>
                     $servicesHero2Tags = $servicesHero2['services-hero-2-tags'];
                     foreach($servicesHero2Tags as $servicesHero2Tag): ?>
                     <div class="tag-item">
-                        <p class="body--l body--l--400 text--black">
+                        <p class="body--l body--l--400 text--white">
                             <?php echo $servicesHero2Tag['services-hero-2-tags-name']; ?>
                         </p>
                     </div>
                     <?php endforeach; ?>
-                </div>
-                <div class="flex flex-col lg:flex-row gap-2 mb-8 lg:mb-0">
-                    <div class="services-hero__card inline-flex gap-4 items-center reveal--translate">
-                        <div class="wrap-icon wrap-icon--40 inline-flex items-center justify-center">
-                            <img src="<?php echo $servicesHero2['services-hero-2-card-icon-1']['url']; ?>" alt="<?php echo $servicesHero2['services-hero-2-card-icon-1']['alt']; ?>"/>
-                        </div>
-                        <div class="inline-flex flex-col gap-1">
-                            <p class="subheading--1 text--white">
-                                <?php echo $servicesHero2['services-hero-2-card-heading-1']; ?>
-                            </p>
-                            <p class="body--l body--l--500 text--white">
-                                <?php echo $servicesHero2['services-hero-2-card-text-1']; ?>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="services-hero__card inline-flex gap-4 items-center reveal--translate">
-                        <div class="wrap-icon wrap-icon--40 inline-flex items-center justify-center">
-                            <img src="<?php echo $servicesHero2['services-hero-2-card-icon-2']['url']; ?>" alt="<?php echo $servicesHero2['services-hero-2-card-icon-2']['alt']; ?>"/>
-                        </div>
-                        <div class="inline-flex flex-col gap-1">
-                            <p class="subheading--1 text--white">
-                                <?php echo $servicesHero2['services-hero-2-card-heading-2']; ?>
-                            </p>
-                            <p class="body--l body--l--500 text--white">
-                                <?php echo $servicesHero2['services-hero-2-card-text-2']; ?>
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="flex lg:flex-row lg:w-5/12 gap-6 lg:items-end">
@@ -78,6 +50,34 @@ if($servicesHeroType): ?>
             <img src="<?php echo THEME_IMG_PATH; ?>/arrow-down-scroll.svg" alt="Flèche icone"/>
         </div>
     </section>
+    <div class="flex flex-col lg:flex-row gap-2 mb-8 lg:mb-0 justify-center py-8">
+        <div class="services-hero__card inline-flex gap-4 items-center reveal--translate">
+            <div class="wrap-icon wrap-icon--40 inline-flex items-center justify-center">
+                <img src="<?php echo $servicesHero2['services-hero-2-card-icon-1']['url']; ?>" alt="<?php echo $servicesHero2['services-hero-2-card-icon-1']['alt']; ?>"/>
+            </div>
+            <div class="inline-flex flex-col gap-1">
+                <p class="subheading--1 text--white">
+                    <?php echo $servicesHero2['services-hero-2-card-heading-1']; ?>
+                </p>
+                <p class="body--l body--l--500 text--white">
+                    <?php echo $servicesHero2['services-hero-2-card-text-1']; ?>
+                </p>
+            </div>
+        </div>
+        <div class="services-hero__card inline-flex gap-4 items-center reveal--translate">
+            <div class="wrap-icon wrap-icon--40 inline-flex items-center justify-center">
+                <img src="<?php echo $servicesHero2['services-hero-2-card-icon-2']['url']; ?>" alt="<?php echo $servicesHero2['services-hero-2-card-icon-2']['alt']; ?>"/>
+            </div>
+            <div class="inline-flex flex-col gap-1">
+                <p class="subheading--1 text--white">
+                    <?php echo $servicesHero2['services-hero-2-card-heading-2']; ?>
+                </p>
+                <p class="body--l body--l--500 text--white">
+                    <?php echo $servicesHero2['services-hero-2-card-text-2']; ?>
+                </p>
+            </div>
+        </div>
+    </div>
     <?php endif; ?>
 <!-- Bronzage -->
 
@@ -101,7 +101,7 @@ if($servicesHeroType): ?>
                     $servicesHero1Tags = $servicesHero1['services-hero-1-tags'];
                     foreach($servicesHero1Tags as $servicesHero1Tag): ?>
                     <div class="tag-item">
-                        <p class="body--l body--l--400 text--black">
+                        <p class="body--l body--l--400 text--white">
                             <?php echo $servicesHero1Tag['services-hero-1-tags-name']; ?>
                         </p>
                     </div>
@@ -124,12 +124,12 @@ $servicesPrices = get_field('services-prices-group');
 
 if($servicesPrices): ?>
 
-<div class="flex flex-col gap-16 lg:items-center mb-48 services-prices">
+<div class="flex flex-col gap-8 lg:gap-16 lg:items-center mb-16 lg:mb-48 services-prices">
     <?php
         $servicesPricesItems = $servicesPrices['services-prices'];
         foreach($servicesPricesItems as $servicesPricesItem): ?>
     
-        <div class="services-prices-wrap p-8 lg:p-16 flex flex-col gap-8 lg:gap-4 lg:gap-8 lg:w-10/12 reveal--fade">
+        <div class="services-prices-wrap px-6 py-8 lg:px-8 lg:p-16 flex flex-col gap-4 lg:gap-8 lg:gap-4 lg:gap-8 lg:w-10/12 reveal--fade">
             <div class="inline-flex items-center gap-4">
                 <div class="wrap-icon wrap-icon--48 inline-flex items-center justify-center">
                     <img src="<?php echo THEME_IMG_PATH; ?>/asterix.svg" alt="Asterix icone"/>
@@ -144,8 +144,8 @@ if($servicesPrices): ?>
             <?php
                 $servicesPricesListItems = $servicesPricesItem['services-price-list'];
                 foreach($servicesPricesListItems as $servicesPricesListItem): ?>
-                <div class="list--item list--item--dark flex justify-between pb-6 gap-4">
-                    <p class="subheading--1 subheading--1--s text--black">
+                <div class="list--item list--item--dark flex justify-between pb-4 lg:pb-6 lg:gap-4">
+                    <p class="subheading--1 subheading--1--s text--black mr-3">
                         <?php echo $servicesPricesListItem['services-price-list-name']; ?>
                     </p>
                     <p class="subheading--1 subheading--1--m text--black">
